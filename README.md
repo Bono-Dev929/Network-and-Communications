@@ -1,0 +1,1 @@
+## Este directorio contiene todos mis apuntes para la materia de Redes y Comunicaciones de la Universidad Nacional de Lanús hasta la fecha febrero 2026. Sola mente usando el material provisto por el profesor.
