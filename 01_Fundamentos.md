@@ -35,7 +35,7 @@
     -Modo Broadcast: significa difucion, esto quiere decir que envia mensaje a todos los dispositivos que hay en una red
     -Point-to-Point: punto a punto, enlace entre dos dispositivos especificos
 
-## Tipos de transmicion
-    -Simplex
-    -Half-Duplex
-    -Duplex
+## Tipos de transmisión
+    -Simplex: transmisión en un solo sentido, osea los mensajes o información solo se pueden enviar mas no recibir EJ: Señal de TV
+    -Half-Duplex: transmicion en ambos sentidos se envia y se recibe, pero uno a la vez, no se puede recivir al mismo tiempo que se envia EJ: walkie-talkie
+    -Duplex: transmicion en ambos sentidos totalmente simultanea envio y recepcion al mismo tiempo sin espera EJ: Telefono o llamadas telefónicas en las que podemos hablar al mismo tiempo que escuchamos.
