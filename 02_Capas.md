@@ -9,3 +9,6 @@
 ## Las cinco capas Modelo Hibrido
 ### Capa fisica:
     Se encarga de bits, señales, cables, todos los componentes fisicos que componen una red, aspectos electricos, mecanicos, mantener los dispositivos conectados fisicamente es decir sus cables, conectores, voltaje.
+
+### Capa Enlace:
+    Maneja tramas(Encapsulamientos), direcciones MAC, Ethernet. Su funcion principal es garantizar la comunicacion entre dispositivos conectados de manera segura y confiable. Se subdivide en MAC y LLC
