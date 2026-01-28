@@ -15,3 +15,6 @@
 
 ### Capa Red:
     Se encarga de enrutar paquetes de datos desde origen hasta destino, es decir de guiar los conjuntos de datos desde su origen hacia el destino, ademas se encarga de IP(direccionamiento), encapsulacion, fragmentacion y deteccion de errores.
+
+### Capa de transporte:
+    se encarga de entregar los datos de un extremo a otro de manera confiable segun protocolo, se asegura que los datos lleguen completos correctos y ordenados. Protocolos como TCP/UDP y puertos.
