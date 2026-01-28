@@ -12,3 +12,6 @@
 
 ### Capa Enlace:
     Maneja tramas(Encapsulamientos), direcciones MAC, Ethernet. Su funcion principal es garantizar la comunicacion entre dispositivos conectados de manera segura y confiable. Se subdivide en MAC y LLC
+
+### Capa Red:
+    Se encarga de enrutar paquetes de datos desde origen hasta destino, es decir de guiar los conjuntos de datos desde su origen hacia el destino, ademas se encarga de IP(direccionamiento), encapsulacion, fragmentacion y deteccion de errores.
