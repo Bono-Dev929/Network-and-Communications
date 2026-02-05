@@ -18,3 +18,7 @@
 
 ### Capa de transporte:
     se encarga de entregar los datos de un extremo a otro de manera confiable segun protocolo, se asegura que los datos lleguen completos correctos y ordenados. Protocolos como TCP/UDP y puertos.
+
+### Capa Aplicacion:
+    Esta capa proporciona interfaces y protocolos para que las aplicaciones de usuario se comuniquen a travez de la red, como HTTP/S, DNS, SMTP, etc.
+
