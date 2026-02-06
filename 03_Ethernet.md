@@ -13,4 +13,18 @@
     Si no hay colicion la trama sigue siendo enviada pero en caso de encontrarse con una colicion la NIC interrumpe el envio de la trama por completo, antes de silenciarse envia un JAM signal, que sirve para que los demas host detecten la colicion y nadie crea que esa trama fue valida. El fragmento de trama que se envio queda corrupto y no se recupera, solo se descarta y se reinicia el proceso.
     Para retransmitir, la NIC espera un minimo tiempo de ranura para permitir que cualquier otro pulso que se alla enviado antes llegue a la NIC en espera, provocando una colicion local evitando una colicion tardia lo que permite al protocolo de CSMA/CD recuperar la situacion y retransmitir mas tarde.
 
+## Framing o Encapsulado de tramas:
+    Este proceso es mediante el que se separan, los datos a enviar, en tramas, que son unidades mas pequeñas de information, para poder ser transmitidos por el medio fisico.
+    Una trama se compone de:
+        -Una cabezera, compuesta por el preambulo, las direcciones MAC de origen y destino y tipo;
+        -Datos;
+        -Secuencia de verificacion.
+    Sirve para delimitar donde inicia y termina cada unidad de datos, para favorecer la deteccion de errores(con CRC) y ayuda a la sincronizacion entre emisor y receptor.
+    Composition detallada de una trama:
+        -Preambulo + SFD: sincronización
+        -MACs: direcciones físicas
+        -Tipo: indica el protocolo de capa superior
+        -Datos: Cualquier cosa que pertenezca a capas superiores
+        -FCS: verificación de errores.
+        -Gap entre frames: El gap de final de trama son 12 bytes vacíos con el objetivo de espaciado entre tramas.
 
