@@ -28,3 +28,9 @@
         -FCS: verificación de errores.
         -Gap entre frames: El gap de final de trama son 12 bytes vacíos con el objetivo de espaciado entre tramas.
 
+## Direcciones MAC:
+    Estas direcciones son un identificador unico asignados a las NIC, usados por la subcapa MAC en la capa de enlace para reconocer interfacez y permitir la comunicacion local.
+    Se compone de 48 en 6 bloques hexadecimales, algunos dispositivos pueden tener mas de una direction
+        -Los primero 24 corresponden al fabricante y los otros 24 al equipo.
+    Respecto a su uso, no todos los protocolos de comunicacion las usan y no todos requieren identificadores globales.
+    
