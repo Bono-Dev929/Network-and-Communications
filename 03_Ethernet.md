@@ -33,4 +33,15 @@
     Se compone de 48 en 6 bloques hexadecimales, algunos dispositivos pueden tener mas de una direction
         -Los primero 24 corresponden al fabricante y los otros 24 al equipo.
     Respecto a su uso, no todos los protocolos de comunicacion las usan y no todos requieren identificadores globales.
-    
+
+## Segmentacion
+    Esta concepto conciste en dividir la red en segmentos mas pequeños para evitar congestion en el trafico de red y reducir coliciones a través de switches.
+    Cada segmento functiona como un medio compartido, por ende como un dominio de colicion particular donde los dispositivos conectados se comunican entre si y comparten ancho de banda y los datos que quieren ir a otro segmento lo hacen a traves de un puente
+    Caracteristicas de Segmentacion:
+        -Los puentes almacenan y luego envían tramas, basándose en las direcciones de Capa 2.
+        -Es independiente del protocolo de Capa 3.
+        -Aumenta la latencia en la red.
+        -Un switch es un bridge con más puertos.
+
+
+
