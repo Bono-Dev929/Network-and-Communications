@@ -43,5 +43,8 @@
         -Aumenta la latencia en la red.
         -Un switch es un bridge con más puertos.
 
-
+## Bridging y Switching
+    Estos conceptos parten de la segmentacion, llamados asi por los dispositivos usados para realizar dichas segmentaciones, sus propositions siguen siendo segmentar una red para reducir trafico.
+        -Bridge o puente: conecta dos o mas redes permitiendo comunicacion entre dispositivos que lo necesiten, es antiguo, tiene pocos puertos y filtra por MAC Address.
+        -Switch: Es la evolucion del bridge, tiene muchos puertos, filtra por tablea MAC, y es de conmutacion rapida, cada puerto es un dominio de colicion.
 
