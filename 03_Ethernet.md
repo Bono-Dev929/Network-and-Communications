@@ -48,3 +48,10 @@
         -Bridge o puente: conecta dos o mas redes permitiendo comunicacion entre dispositivos que lo necesiten, es antiguo, tiene pocos puertos y filtra por MAC Address.
         -Switch: Es la evolucion del bridge, tiene muchos puertos, filtra por tablea MAC, y es de conmutacion rapida, cada puerto es un dominio de colicion.
 
+## Sticky learning
+    Es un metodo por el cual un puente o switch aprende las direcciones MAC de los dispositivos, asignandolas al puerto especifico donde fueron detectadas.
+    Para este proceso usa una tabla llamada FBD que guarta la informacion de que dispositivos tiene conectados y en que puerto estan
+    A diferencia del aprendizaje dinámico normal, en Sticky Learning
+    las MAC aprendidas quedan fijadas de forma persistente, evitando que
+    puedan cambiarse o aprenderse desde otro puerto.
+
