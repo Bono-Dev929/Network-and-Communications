@@ -85,3 +85,38 @@
         Estrella conmutada → cuando se utilizan switches.
         Una red con hub tiene forma física de estrella pero comportamiento lógico de bus.
 
+### Ampliación técnica
+    Evolución de velocidades
+    Ethernet fue aumentando su velocidad manteniendo la misma lógica de Capa 2.
+    Principales escalones históricos:
+        -10 Mbps
+        -100 Mbps (Fast Ethernet)
+        -1 Gbps (Gigabit Ethernet)
+        -10 Gbps y superiores
+        -La estructura de trama Ethernet se mantiene; lo que cambia es la capacidad de transmisión y la tecnología física.
+    Tecnologías físicas
+        Ethernet puede operar sobre:
+        -Cable coaxial (ej: 10BASE2)
+        -Par trenzado
+        -Fibra óptica
+        A mayor velocidad:
+        -Mayor exigencia en el cableado.
+        -Mayor sensibilidad a interferencias.
+        -Uso más frecuente de fibra en backbone.
+    Impacto en el dominio de colisión
+        En tecnologías antiguas:
+        -Topología bus.
+        -Uso de hubs.
+        -Existían colisiones.
+        -Se utilizab CSMA/CD.
+        En tecnologías modernas con switches:
+        -Cada puerto es un dominio de colisión independiente.
+        -En Full-Duplex no hay colisiones.
+        -CSMA/CD deja de ser necesario.
+        Esto muestra que la evolución no fue solo de velocidad, sino también de arquitectura.
+    Mezcla de velocidades
+        Un switch puede conectar dispositivos de distintas velocidades.
+        Cada enlace negocia su propia velocidad.
+        Si un host de 1 Gbps se comunica con uno de 100 Mbps, el cuello de botella será el enlace más lento.
+        El switch no aumenta la velocidad del dispositivo lento.
+
