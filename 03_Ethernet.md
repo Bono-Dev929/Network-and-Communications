@@ -70,3 +70,18 @@
     Es intermedio. Espera los primeros 64 bytes para evitar fragmentos de colisión.
     Balance entre velocidad y confiabilidad.
 
+## Tecnologias y velocidades:
+    Hace ya mucho tiempo que Ethernet consiguió situarse como el principal protocolo del nivel de enlace.
+
+    Ethernet 10BASE2 consiguió, en la década de los 90s, una gran aceptación en el sector. Actualmente se considera una tecnología de legado frente a tecnologías como Gigabit Ethernet.
+
+    Las tecnologías Ethernet se diferencian en los siguientes conceptos:
+        -Velocidad: Es la velocidad a la que transmite la tecnología. Define la tasa de transferencia de datos entre nodos.
+        -Tipo de cable: Hace referencia a la tecnología del nivel físico utilizada. Cada variante de Ethernet utiliza un medio físico específico para transmitir la señal.
+        -Longitud máxima: Es la distancia máxima que puede existir entre dos nodos adyacentes sin estaciones repetidoras. Depende del tipo de cable y de la tecnología utilizada.
+        -Topología: Determina la forma física de la red:
+        Bus → cuando se usan conectores en T (propio de tecnologías antiguas como 10BASE2).
+        Estrella de difusión → cuando se utilizan hubs.
+        Estrella conmutada → cuando se utilizan switches.
+        Una red con hub tiene forma física de estrella pero comportamiento lógico de bus.
+
