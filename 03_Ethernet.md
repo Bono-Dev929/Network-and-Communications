@@ -55,3 +55,18 @@
     las MAC aprendidas quedan fijadas de forma persistente, evitando que
     puedan cambiarse o aprenderse desde otro puerto.
 
+## Metodos de Switchig
+    Definen cómo el switch procesa las tramas antes de reenviarlas.
+
+    Store-and-Forward
+    Recibe la trama completa, verifica errores (CRC) y luego reenvía.
+    Más seguro pero más lento.
+
+    Cut-Through
+    Reenvía la trama apenas lee la MAC destino.
+    Muy rápido pero puede reenviar errores.
+
+    Fragment-Free
+    Es intermedio. Espera los primeros 64 bytes para evitar fragmentos de colisión.
+    Balance entre velocidad y confiabilidad.
+
