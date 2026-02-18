@@ -120,3 +120,36 @@
         Si un host de 1 Gbps se comunica con uno de 100 Mbps, el cuello de botella será el enlace más lento.
         El switch no aumenta la velocidad del dispositivo lento.
 
+## Control de Flujo en Ethernet
+    El control de flujo es un mecanismo que evita que un dispositivo transmita datos más rápido de lo que el receptor puede procesarlos.
+    Problema que resuelve:
+        -Si un equipo recibe tráfico más rápido de lo que puede reenviarlo o procesarlo, sus buffers pueden saturarse, provocando pérdida de tramas.
+    El control de flujo regula temporalmente la transmisión para evitar esa pérdida. Es relevante principalmente en Ethernet Full-Duplex.
+
+### Operación PAUSE en Full-Duplex
+    La operación PAUSE es un mecanismo de control de flujo en Ethernet Full-Duplex.
+    Funcionamiento general:
+        -Un dispositivo detecta que su buffer está por saturarse.
+        -Envía una trama especial PAUSE.
+        -El emisor detiene temporalmente la transmisión.
+        -Transcurrido el tiempo indicado, puede reanudar el envío.
+    Características importantes:
+        -Solo funciona en Full-Duplex.
+        -No elimina congestión estructural.
+        -Es un mecanismo temporal.
+        -Puede aumentar la latencia.
+    Conceptualmente:
+    PAUSE no mejora la red; simplemente evita pérdida inmediata de datos cuando hay saturación momentánea.
+
+
+
+
+
+
+
+
+
+
+
+
+
