@@ -9,3 +9,17 @@
 ## Direccionamiento IP
     El sistema de direccionamiento ip nació de proyectos militares y universitarios en los 70 para garantizar la distribución de información.
     Se planificaron 4000 millones de direcciones IP, pero el crecimiento de dispositivos forzó el desarrollo de IPV6 que eleva exponencialmente la capacidad que tenia IPV4 de 2 elevado 32 a 2 elevado 128.
+
+## Tipos de direccionamiento
+### Class & Classless: 
+    Tradicionalmente, las redes se dividían en clases según su primer octeto:
+        Clase A (0-127): Máscara /8, para redes con millones de hosts.
+        Clase B (128-191): Máscara /16, permite hasta 65,534 hosts por red.
+        Clase C (192-223): Máscara /24, ideal para redes pequeñas de hasta 254 hosts.
+        Clase D y E: Reservadas para Multicast e investigación respectivamente.
+    
+### Direcciones Públicas o Privadas:
+    Públicas: Son visibles y ruteables en todo el internet.
+    Privadas: Se usan internamente en hogares u oficinas y no se publican directamente a internet.
+    Los rangos definidos por la IANA incluyen el 10.x.x.x, 172.16.x.x a 172.31.x.x, y el 192.168.x.x.
+
