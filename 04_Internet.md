@@ -23,3 +23,11 @@
     Privadas: Se usan internamente en hogares u oficinas y no se publican directamente a internet.
     Los rangos definidos por la IANA incluyen el 10.x.x.x, 172.16.x.x a 172.31.x.x, y el 192.168.x.x.
 
+## Trama IP(V4)
+    Un paquete IP (Datagrama) consta de un encabezado de 20 a 60 bytes y el resto datos. 
+    El encabezado incluye campos criticos como:
+        - TTL (Time to Live): Un contador que disminuye en cada router para evitar que los paquetes circulen indefinidamente.
+        - Protocolo: Indica si el contenido es TCP, UDP, etc.
+        - Checksum: Para detectar si la cabecera se dañó en tránsito.
+        - Direcciones IP: Tanto de origen como de destino.
+
