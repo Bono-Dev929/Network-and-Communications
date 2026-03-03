@@ -31,3 +31,7 @@
         - Checksum: Para detectar si la cabecera se dañó en tránsito.
         - Direcciones IP: Tanto de origen como de destino.
 
+## Gestion de redes (SubNeting y SuperNeting)
+    -Subneteo: Consiste en dividir una red grande en subredes más pequeñas "robando" bits a la porción de host para asignarlos a la red. Esto permite un mejor aprovechamiento de las direcciones y mayor control del tráfico.
+    Superneteo: Conciste en combinar o juntar redes pequeñas en una mas grande para simplificar la tabla de enrutamiento, se hace reduciendo los bits asignados a red.
+
