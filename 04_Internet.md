@@ -35,3 +35,6 @@
     -Subneteo: Consiste en dividir una red grande en subredes más pequeñas "robando" bits a la porción de host para asignarlos a la red. Esto permite un mejor aprovechamiento de las direcciones y mayor control del tráfico.
     Superneteo: Conciste en combinar o juntar redes pequeñas en una mas grande para simplificar la tabla de enrutamiento, se hace reduciendo los bits asignados a red.
 
+## Operacion AND y Default Gateway
+    Los dispositivos hacen una operacion AND entre su mascara y la IP de destino para saber a donde tienen que enviar la trama, si es local, lo hace a traves de MAC de destino, pero si es externo este debe enviar la trama a la puerta de enlace o Default Gateway, osea al router para que este lo encamine hacia otra red, esta Gateway se suele configurar usando la ultima IP utilizable de la red.
+
