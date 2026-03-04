@@ -14,3 +14,12 @@
         se suele usar para: Streaming de video, VoIP, Videojuegos online, consultas DNS.
     Su cabecera consta de solo 8 bytes y posee una pseudo-cabecera que se usa para calcular el codigo de error, checksum, esta cabecera incluye information de IP para verificar que el datagrama llego al destino correcto antes de ser procesado, es decir verificar que llego al puerto o host correcto. Como el repartidor de pizza que verifica que sea el domicilio correcto antes de que entregar la pizza.
 
+## Multiplexacion TCP
+    El otro servicio de capa de transporte es TCP, a diferencia de UDP este es orientado a conexion, es decir:
+        -Necesita establecer una conexion entre emisor y receptor antes de enviar datos;
+        -Garantiza que todos los datos lleguen correctos y en orden;
+        -Evita que el emisor sature al receptor;
+        Usado para Web (HTTP), Email (SMTP), Transferencia de archivos (FTP).
+    TCP requiere varias capas de verificacion o seguridad para funcionar, su cabecera tiene 20 bytes, y posee una pseudo-cabecera de 12 bytes, usada para calcular el checksum.
+    TCP ejecuta un three-way-handshake, un saludo de tres vias o una verification, como en una llamada telefonica de pedido el cliente llama y pregunta si se comunico con la pizzeria, la pizzeria responde que si y el cliente ordena, y por cada orden(paquete) se necesita una confirmation y luego un orden de segmentos y control de flujo, el orden de segmentos es que lleguen en orden en caso de la pizza que primero se haga la masa y luego se pongan los ingredientes y el control de flujo es que si hablo demaciado rapido el receptor puede no escuchar asi que TCP regula eso tambien.
+
