@@ -38,3 +38,11 @@
 ## Operacion AND y Default Gateway
     Los dispositivos hacen una operacion AND entre su mascara y la IP de destino para saber a donde tienen que enviar la trama, si es local, lo hace a traves de MAC de destino, pero si es externo este debe enviar la trama a la puerta de enlace o Default Gateway, osea al router para que este lo encamine hacia otra red, esta Gateway se suele configurar usando la ultima IP utilizable de la red.
 
+## Comunicacion WAN
+    Se refiere a las tecnologías para cubrir grandes distancias:
+        Líneas dedicadas: 
+            -Conexiones exclusivas y constantes.
+        Conmutación de circuitos: 
+            -Establece un camino fijo solo durante la sesión (ej. telefonía tradicional), pero es ineficiente si no hay tráfico.
+        Conmutación de paquetes: 
+            -Divide los datos en paquetes independientes que comparten el ancho de banda, optimizando la infraestructura (es la base de Internet).
