@@ -41,3 +41,15 @@
     -Identificadores de Conexión: 
         Cada extremo elige un ISN (Initial Sequence Number) aleatorio para evitar confusiones con paquetes de conexiones anteriores. También se negocia el MSS (Maximum Segment Size), que es el tamaño máximo de datos que cada host puede recibir en un segmento.
 
+## Desencapsulamiento de trama
+    Cuando ua trama llega a es recibida por un host esta atraviesa un proceso de desencapsulamiento:
+        -Capa Física: La señal eléctrica o luz se convierte en bits.
+
+        -Capa de Enlace: Se verifica la MAC destino y el código de error (CRC). Si es correcto, se extrae el datagrama IP.
+
+        -Capa de Red: Se comprueba la IP destino y campos como el TTL. Si es para el host, se pasa el segmento a la siguiente capa.
+
+        -Capa de Transporte: Se verifica el puerto destino (TCP/UDP), se reensamblan fragmentos y se gestiona el control de flujo.
+
+        -Capa de Aplicación: Finalmente, el contenido útil (payload) llega a la aplicación correspondiente (navegador, correo, etc.).
+
