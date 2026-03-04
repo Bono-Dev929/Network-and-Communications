@@ -28,3 +28,16 @@
         -La comunicación se identifica mediante sockets, que son la combinación de una dirección IP y un número de puerto (ej. 10.0.1.25:13).
         -El servidor suele estar en un estado de escucha en un puerto "bien conocido", esperando peticiones de los clientes.
     
+## Mas sobre TCP:
+    TCP permite múltiples conexiones simultáneas en un mismo host. Para que dos conexiones sean distintas, deben diferir en al menos uno de los cuatro valores: IP origen, puerto origen, IP destino o puerto destino.
+    Se destaca la flexibilidad del sistema operativo para manejar interfaces:
+        -NICs múltiples: Un servidor puede tener varias tarjetas de red físicas o virtuales, cada una con su propia IP.
+        -IP Alias: Es posible asignar varias direcciones IP a una sola interfaz física para que el servidor escuche en distintas direcciones.
+
+### Conexion y desconexion
+    TCP utiliza un proceso formal para iniciar y terminar la comunicación.
+    -Flags de Conexión/Desconexión: 
+        Utiliza bits específicos (flags) en la cabecera, como SYN (sincronizar) para iniciar, ACK (acuse de recibo) para confirmar y FIN para terminar.
+    -Identificadores de Conexión: 
+        Cada extremo elige un ISN (Initial Sequence Number) aleatorio para evitar confusiones con paquetes de conexiones anteriores. También se negocia el MSS (Maximum Segment Size), que es el tamaño máximo de datos que cada host puede recibir en un segmento.
+
