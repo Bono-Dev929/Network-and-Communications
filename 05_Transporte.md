@@ -23,3 +23,8 @@
     TCP requiere varias capas de verificacion o seguridad para funcionar, su cabecera tiene 20 bytes, y posee una pseudo-cabecera de 12 bytes, usada para calcular el checksum.
     TCP ejecuta un three-way-handshake, un saludo de tres vias o una verification, como en una llamada telefonica de pedido el cliente llama y pregunta si se comunico con la pizzeria, la pizzeria responde que si y el cliente ordena, y por cada orden(paquete) se necesita una confirmation y luego un orden de segmentos y control de flujo, el orden de segmentos es que lleguen en orden en caso de la pizza que primero se haga la masa y luego se pongan los ingredientes y el control de flujo es que si hablo demaciado rapido el receptor puede no escuchar asi que TCP regula eso tambien.
 
+## Modelo Cliente-Servidor
+    En este modelo, el intercambio de datagramas ocurre entre un proceso que solicita un servicio (cliente) y uno que lo ofrece (servidor).
+        -La comunicación se identifica mediante sockets, que son la combinación de una dirección IP y un número de puerto (ej. 10.0.1.25:13).
+        -El servidor suele estar en un estado de escucha en un puerto "bien conocido", esperando peticiones de los clientes.
+    
