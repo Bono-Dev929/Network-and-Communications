@@ -1,0 +1,3 @@
+# Vlans
+    Una Vlan o Virtual LAN es una red logica que permite agrupar dispositivos dentro de una misma red permitiendo su cominicacion como si se tratara de una red aislada pero dentro de otra red local, impidiendo que quienes no pertenecen a dicha Vlan no puedan acceder a pesar de estar fisicamente en el mismo lugar o conectadas al mismo switch.
+    Para poder realizar comunicaciones entre Vlans es necesario y obligatorio que la information pase a traves del router, y este se encarga de permitir su paso o no.
