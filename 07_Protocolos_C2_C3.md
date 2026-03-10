@@ -9,3 +9,10 @@
     Los bucles ocurren cuando hay múltiples caminos físicos entre switches sin una configuración que los gestione.
         -Storm Control: Es una función que limita el tráfico de broadcast en los puertos para evitar "tormentas" que saturen el procesador del switch y tiren abajo la red.
         -STP: Este protocolo evita bucles eligiendo un switch raíz (Root Bridge) y bloqueando lógicamente los caminos redundantes. Si un enlace falla, STP habilita automáticamente la ruta bloqueada para mantener la conectividad.
+
+## NAT y PAT
+    Son mecanismos para conectar redes privadas a la red publica ante la escasez de direcciones IPv4:
+        -NAT: Network address translation traduce direcciones IP privadas en publicas
+            -NAT Estática: Asignación fija uno a uno (una IP privada siempre sale por la misma IP pública). Se usa para servidores internos accesibles desde afuera (Port Forwarding).
+            -NAT Dinámica: Usa un grupo (pool) de IPs públicas y las asigna a medida que los dispositivos las necesitan.
+        -PAt(Network-Port Address Translation): También llamado NAT con sobrecarga. Traduce tanto la IP como el puerto (socket), permitiendo que cientos de dispositivos internos salgan a internet usando una sola IP pública.
